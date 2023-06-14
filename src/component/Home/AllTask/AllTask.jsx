@@ -9,7 +9,7 @@ const AllTask = () => {
     return (
         <div className='grid md:grid-cols-2 justify-between items-center gap-4'>
           {
-             allTasks.map(tasks=><ShowAllTask key={tasks._id} tasks={tasks}></ShowAllTask>)
+             allTasks.map(tasks=><ShowAllTask key={tasks._id} refetch={refetch} tasks={tasks}></ShowAllTask>)
           }
         </div>
     );

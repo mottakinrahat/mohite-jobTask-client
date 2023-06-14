@@ -14,6 +14,7 @@ import {
 } from '@tanstack/react-query'
 import AllTask from './component/Home/AllTask/AllTask.jsx';
 import AddTask from './component/AddTask/AddTask.jsx';
+import UpdateData from './component/UpdateData/UpdateData.jsx';
 
 const queryClient = new QueryClient()
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path:'addTask',
         element:<AddTask></AddTask>
+      },
+      {
+        path:'updatedata/:id',
+        element:<UpdateData></UpdateData>
       }
     ]
   },
