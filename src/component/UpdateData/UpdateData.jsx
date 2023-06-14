@@ -32,14 +32,9 @@ const UpdateData = () => {
         })
             .then((res) => res.json())
             .then((data) => {
-                console.log(object);
                 if (data.modifiedCount > 0) {
                     refetch();
-                    Swal.fire(
-                        'Deleted!',
-                        'Your file has been deleted.',
-                        'success'
-                      )
+                    Swal.fire('Updated!', 'Your task has been Updated!!!', 'success');
                 }
             });
     };
