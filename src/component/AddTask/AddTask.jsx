@@ -8,7 +8,7 @@ const AddTask = () => {
     const [, refetch] = useTask();
     const onSubmit = updateData => {
         console.log(updateData);
-        fetch('http://localhost:5000/allTask', {
+        fetch('https://mohite-job-task-server.vercel.app/allTask', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updateData)

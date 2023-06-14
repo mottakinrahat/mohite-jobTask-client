@@ -5,7 +5,7 @@ const useTask = () => {
     const {isLoading,refetch,data:allTasks=[]}=useQuery({
         queryKey:['allTask'],
         queryFn:async ()=>{
-            const response=await fetch ('http://localhost:5000/allTask')
+            const response=await fetch ('https://mohite-job-task-server.vercel.app/allTask')
             return response.json();
         },
     })

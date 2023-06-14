@@ -7,7 +7,7 @@ const ShowAllTask = ({ tasks, refetch }) => {
 
     const handleDelete = (tasks) => {
         console.log(tasks._id);
-        fetch(`http://localhost:5000/allTask/${tasks._id}`, {
+        fetch(`https://mohite-job-task-server.vercel.app/allTask/${tasks._id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

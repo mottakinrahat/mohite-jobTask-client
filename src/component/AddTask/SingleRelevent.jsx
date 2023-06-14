@@ -14,7 +14,7 @@ const SingleRelevent = ({ tasks }) => {
                         <h2 className="text-pink-500 text-2xl font-bold mb-4">{taskName}</h2>
                         <p className="text-gray-700"><span className='font-bold'>Description: </span>{taskDescription}</p>
                         <p className="text-gray-700"><span className='font-bold'>Status: </span>{taskStatus}</p>
-                       <Link to='/alltask'> <button className='btn bg-pink-500 text-white justify-end mt-10'>See more</button></Link>
+                       <Link to='/alltask'> <button className='btn bg-pink-500 text-white justify-end mt-10'>See All</button></Link>
 
                     </div>
                 </div>

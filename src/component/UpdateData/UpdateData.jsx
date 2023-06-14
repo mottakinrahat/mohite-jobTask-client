@@ -25,7 +25,7 @@ const UpdateData = () => {
         
         
     
-        fetch(`http://localhost:5000/allTask/${id}`, {
+        fetch(`https://mohite-job-task-server.vercel.app/allTask/${id}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updatedData),
